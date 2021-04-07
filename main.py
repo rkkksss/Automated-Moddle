@@ -41,6 +41,13 @@ def create_dir(i):
     return name
 
 
+def create_pic_dir(i):
+    name = f'{create_dir(i)}/Фото'
+    if not os.path.exists(name):
+        os.mkdir(name)
+    return name
+
+
 def test_index(test_name):
     txt = re.match('Задание №(\d+)', test_name).group(1)
     return txt
@@ -64,8 +71,9 @@ print('Copying pictures...')
 pic_dir = args.pic_path
 for dirpath, dirnames, filenames in os.walk(pic_dir):
     for file in filenames:
+
         i = pic_index(file)
-        dst = create_dir(i)
+        dst = create_pic_dir(i)
         shutil.copy(f'{pic_dir}/{file}', dst)
 
 print('Making archives...')
