@@ -11,7 +11,8 @@ parser.add_argument('--pic-path', metavar='DIR', type=str, required=True,
                     help='dir with pictures')
 parser.add_argument('--text-path', metavar='DIR', type=str, required=True,
                     help='dir with text')
-parser.add_argument('--force', action='store_true')
+parser.add_argument('--force', action='store_true',
+                    help='delete destination directory if exists')
 
 args = parser.parse_args()
 
