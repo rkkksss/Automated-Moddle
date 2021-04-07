@@ -11,7 +11,8 @@
 
 Все текстовые файлы должны иметь название "Задание №XX", где XX - номер теста
 
-```python3 main.py [-h] --dest DIR --pic-path DIR --text-path DIR [--force]
+```
+python3 main.py [-h] --dest DIR --pic-path DIR --text-path DIR [--force]
 
 Раскладываем фоточки
 
@@ -20,4 +21,5 @@ optional arguments:
   --dest DIR       dir for result
   --pic-path DIR   dir with pictures
   --text-path DIR  dir with text
-  --force          delete destination directory if exists```
+  --force          delete destination directory if exists
+  ```
