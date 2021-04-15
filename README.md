@@ -23,3 +23,14 @@ optional arguments:
   --text-path DIR  dir with text
   --force          delete destination directory if exists
   ```
+
+## Пример использования
+
+Есть 2 папки: 
+-photo, где лежат картинки для тестов с названиями вида ``` "задание1.вопрос1.2.jpg" ```
+-test, где лежат тексты для тестов с названиями вида ``` "Задание №2.txt" ```
+Сохранить данные вы хотите в папку res.
+Тогда запуск скрипта будет иметь такой вид:
+```
+python3 sctipt.py --dest=res --pic-path=photo --text-path=test --force
+```
